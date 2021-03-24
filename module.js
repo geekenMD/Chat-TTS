@@ -20,6 +20,9 @@ MODULES.moduleClasses["chat_tts"] = class {
 
         koi.addEventListener("chat", (event) => {
             if (this.settings.enabled) {
+                event.links.forEach((link) => {
+                event.message = event.message.replace(new RegExp(link), "");
+             });
                 this.queue.push(encodeURIComponent(event.sender.username + " says " + event.message.trim()));
                 this.check();
             }
