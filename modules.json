@@ -3,18 +3,13 @@
         "*"
     ],
     "unsupported": [],
-    "version": "1.1.1",
-    "name": "Chat TTS",
+    "version": "1.0.0",
+    "name": "TWG Module",
     "overlays": [
         "module.js"
     ],
     "scripts": [
         "module.js"
     ],
-    "required": [
-        {
-            "namespace": "chat_tts",
-            "id": "chat_tts"
-        }
-    ]
+    "required": []
 }
